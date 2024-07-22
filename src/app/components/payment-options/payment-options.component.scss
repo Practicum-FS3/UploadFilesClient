@@ -1,0 +1,272 @@
+
+// @font-face {
+//   font-family: 'Ploni ML v2 AAA Light';
+//   src: url('sources/font/Ploni/PloniLight.otf') format('opentype');
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Ploni ML v2 AAA Bold';
+//   src: url('sources/fonts/Ploni/PloniBold.otf') format('opentype');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Ploni ML v2 AAA';
+//   src: url('sources/fonts/Ploni/PloniMedium.otf') format('opentype');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Anomalia ML v2 AAA';
+//   src: url('sources/fonts/Anomalia ML v2 AAA Bold.otf') format('opentype');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+
+/* סגנון כללי */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0;
+    height: 200%;
+  }
+  
+  div {
+    border-radius: 60px;
+    margin: 0.5%;
+  }
+  
+  p {
+    // font-family: 'Ploni ML v2 AAA';
+    font-size: 120%;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  /* סגנון לתיבת תשלום */
+  .PaymentOptionDiv {
+    background-color: #FFFCEF;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .PaymentOptionDivRow {
+    display: flex;
+    /* gap: 5%; */
+    /* height: fit-content; */
+    /* justify-content: space-around; */
+  }
+  
+  .PaymentOptionDivContainer {
+    width: 85%;
+    /* height: 400%; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    /* row-gap: 10vh; */
+  }
+  
+  /* סגנון לתיבה של אייקונים ותמונות */
+  .PaymentOptionDivContainerIcons {
+    display: flex;
+    width: 85%;
+    height: 34vh;
+    /* margin-left: 5%; */
+    /* margin-right: 3%; */
+    /* align-items: stretch; */
+  }
+  
+  .PaymentOptionDivContainerIcons img {
+    flex: 0 0 25%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // background-image: url('sources/EnvelopeIcon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+    margin-right: 3%;
+  }
+  
+  #PaymentsOptionsDivString {
+    background-color: #4C4C49;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 82%;
+    flex: 0 0 65%;
+    align-items: center;
+    text-align: center;
+    margin-left: 2%;
+    margin-bottom: 5%;
+  }
+  
+  #PaymentsOptionsDivString p {
+    // font-family: 'Anomalia ML v2 AAA';
+    color: #FFFCEF;
+    font-size: 300%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* סגנון טקסטים */
+  .textOption {
+    margin-bottom: 0;
+  }
+  
+  .textOptionBold {
+    margin-bottom: 10%;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  
+  .headerOption {
+    font-weight: 800;
+    font-size: 200%;
+    margin-bottom: 2%;
+  }
+  
+  .Icon {
+    margin-top: -3%;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .PaymentOptionDivContainer {
+        /* width: 100%; */
+        height: auto;
+    }
+  
+    .PaymentOptionDivRow {
+        flex-direction: column;
+        /* gap: 40%; */
+    }
+  
+    .PaymentOptionDivContainerIcons {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  
+    .PaymentOptionDivContainerIcons img {
+        width: 50%;
+        /* margin-bottom: 20px; */
+    }
+  
+    #PaymentsOptionsDivString {
+        width: 100%;
+        margin-left: 0;
+        /* margin-bottom: 20px; */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .PaymentOptionDiv {
+        width: 100%;
+        height: auto;
+    }
+  
+    .PaymentOptionDivContainer {
+        width: 100%;
+        height: auto;
+        gap: 1.5vh;
+    }
+  
+    .PaymentOptionDivRow {
+        /* gap: 20px; */
+    }
+  
+    .PaymentOptionDivContainerIcons {
+        height: auto;
+        width: 100%;
+    }
+  
+    .PaymentOptionDivContainerIcons img {
+        width: 80%;
+        /* margin-bottom: 20px; */
+    }
+  
+    #PaymentsOptionsDivString {
+        width: 100%;
+        margin-left: 0;
+        /* margin-bottom: 20px; */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .PaymentOptionDivContainer {
+        /* gap: 10px;
+        row-gap: 5vh; */
+    }
+  
+    .PaymentOptionDivRow {
+        /* gap: 10px; */
+    }
+  
+    .PaymentOptionDivContainerIcons {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .PaymentOptionDivContainerIcons img {
+        width: 90%;
+        height: auto;
+    }
+  
+    #PaymentsOptionsDivString {
+        width: 100%;
+        margin-left: 0;
+        /* margin-bottom: 10px; */
+        height: 60%;
+        margin-top: 5%;
+    }
+  
+    p {
+        font-size: 100%;
+    }
+  
+    .headerOption {
+        font-size: 150%;
+    }
+  
+    #PaymentsOptionsDivString p {
+        font-size: 200%;
+    }
+  }
+  
+  
+  
+  .backgroundImageDiv {
+    flex: 0 35%; /* תופס 35% מהרוחב של ה-container */
+    height: 85%; /* מבטיח שהגובה יתאים לגובה של ה-container */
+    /* width: 100%; */
+    // background-image: url('sources/EnvelopeIcon.png');
+    /* background-size: cover; */
+    background-position: top;
+    background-repeat: no-repeat;
+    /* margin-right: 3%; */
+    /* margin-bottom: 0; */
+  }
+  @media (max-width: 600px) {
+    #PaymentsOptionsDivString {
+        height: 60%; /* מקטין את הגובה במובייל */
+    }
+    .backgroundImageDiv {
+        flex: 0 0 30%; /* מקטין את החלק של התמונה במובייל */
+    }
+  }
+  

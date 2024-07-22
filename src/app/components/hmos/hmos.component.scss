@@ -1,0 +1,85 @@
+.externalDiv {
+    width: 100%;
+    height: 3326px;
+    border-radius: 39px 39px 39px 39px;
+    background: rgba(236, 236, 236, 1)
+}
+.HMO {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15%;
+    width: 65%;
+    border-radius: 55px 55px 55px 55px;
+    margin: 2.5%;
+    margin-right: 17%;
+    background: rgba(255, 255, 255, 1);
+}
+.title {
+    padding:4%;
+    // font-family: ' Anomalia ML v2 AAA';
+    font-size: 430%;
+    font-weight: 700;
+}
+.innerTitle {
+    padding:4%;
+    font-size: 235%;
+    font-weight: 700;
+    margin-right: 5%;
+}
+.text {
+    width: 70%;
+    padding: 5px; 
+    font-size: 238%;
+    font-weight: 700;
+    line-height: 100%;
+}
+.smallText {
+    font-size: 57%;
+}
+p {
+    margin: 10px; 
+}
+.toFlex1 {
+    width: 45%;
+    & .text{
+         margin-right: 10%;
+    }
+}
+.toFlex2 {
+    width: 55%;
+}
+
+@media screen and (max-width: 768px) {
+    .HMO {
+        height: 17%;
+        width: 80%;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 10%;
+    }
+    .toFlex1 {
+        width: 100%;
+    }
+    .toFlex2 {
+        width: 100%;
+    }
+    .innerTitle {
+        font-size: 200%;
+    }
+    .title {
+        // font-family: ' Anomalia ML v2 AAA';
+        font-size: 190%;
+        font-weight: 700;
+    }
+    .text {
+        width: 80%;
+        margin-right: 10%;
+        font-size: 150%;
+    }
+    p {
+        margin: 2px; 
+    }
+}

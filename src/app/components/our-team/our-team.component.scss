@@ -1,0 +1,291 @@
+.body{
+    grid-row: 4,4,4;
+    grid-column:7,5;
+}
+.title{
+
+    color: var(--, #4C4C49);
+    text-align: right;
+    /* כותרת קטנה */
+    font-family: "Anomalia ML v2 AAA";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.143%; /* 97.143% */
+    // עימוד
+    margin-top: 52.62px;
+    margin-right: 176.81px;
+
+}
+
+.team-member-1{
+
+    width: 605px;
+    height: 909px;
+    flex-shrink: 0;
+    border-radius: 50px;
+background: #FAF6F3;
+float: right;
+margin-top: 66px;
+padding: 10px;
+direction: rtl;
+margin-right: 92px;
+// margin: 20px;
+
+}
+
+.team-member-2{
+    width: 605px;
+    height: 484.5px;
+    flex-shrink: 0;
+    border-radius: 50px;
+background: #FCFBF9;
+// עימוד
+direction: rtl;
+margin-right: 50px;
+margin-left: 88px;
+margin-top: 66px;
+padding: 10px;
+float: left;
+
+}
+
+.team-member-3{
+    width: 605px;
+    height: 484.5px;
+    flex-shrink: 0;
+    border-radius: 50px;
+background: #FCFBF9;
+// עימוד
+direction: rtl;
+margin-right: 50px;
+margin-left: 88px;
+margin-top: 59.5px;
+padding: 10px;
+float: left;
+}
+
+
+.team-member-4{
+    border-radius: 50px;
+    background: #FCFBF9;
+    width: 605px;
+height: 607px;
+flex-shrink: 0;
+// עימוד
+direction: rtl;
+margin-right: 92px;
+margin-left: 52px;
+margin-top: -69.5px;
+padding: 10px;
+float: right;
+
+}
+
+
+.team-member-5{
+    border-radius: 50px;
+    background: #FCFBF9;
+    width: 605px;
+height: 484.5px;
+flex-shrink: 0;
+// עימוד
+direction: rtl;
+margin-right: 52px;
+margin-left: 88px;
+margin-top: -484.5px;
+padding: 10px;
+float: left;
+
+}
+
+.icon-team-member{
+  margin-top: 80px; 
+  margin-right: 58.26px; 
+  float: right;
+
+}
+
+.team-member-title-plus-description{
+    margin-right: 135px;
+    margin-top: 89.5px;
+    margin-left: 150px;
+}
+
+.team-member-title{
+    color: var(--Color-7, #000);
+    text-align: right;
+    
+    /* כותרת2 */
+    font-family: "Ploni ML v2 AAA";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 110.526% */
+}
+
+.team-member-description{
+    color: var(--Color-7, #000);
+
+    /* 22 */
+    font-family: "Ploni ML v2 AAA";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
+
+}
+
+
+.team-member-d{
+    display: flex;
+width: 473px;
+height: 367px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: var(--Color-7, #000);
+text-align: right;
+
+/* 22 */
+font-family: "Ploni ML v2 AAA";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 136.364% */
+// עימוד
+margin-left: 64px;
+margin-right: 68px;
+margin-top: 50.5;
+
+
+}
+
+.label {
+    width: 345px;
+    height: 68px;
+  }
+  
+  .label .text-wrapper {
+    position: fixed;
+    height: 68px;
+    top: 0;
+    left: 0;
+    font-family: "Anomalia ML v2 AAA-Bold", Helvetica;
+    font-weight: 700;
+    color: #4c4c49;
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: 68px;
+    white-space: nowrap;
+    direction: rtl;
+  }
+
+
+.Team Image{
+    width: 59.941px;
+height: 53.057px;
+flex-shrink: 0;
+margin-top: 80px;
+margin-right: 58px;
+  }
+
+
+//   @media()
+
+/* קוד CSS מקורי */
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 60px;
+        margin-top: 40px;
+        margin-right: 150px;
+    }
+
+    .team-member-1,
+    .team-member-2,
+    .team-member-3,
+    .team-member-4,
+    .team-member-5 {
+        width: 100%;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .icon-team-member {
+        margin-top: 50px;
+        margin-right: 40px;
+    }
+
+    .team-member-title-plus-description {
+        margin-right: 100px;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-right: 100px;
+    }
+
+    .team-member-1,
+    .team-member-2,
+    .team-member-3,
+    .team-member-4,
+    .team-member-5 {
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .icon-team-member {
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .team-member-title-plus-description {
+        margin-right: 70px;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    .team-member-1,
+    .team-member-2,
+    .team-member-3,
+    .team-member-4,
+    .team-member-5 {
+        width: 100%;
+        height: auto;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .icon-team-member {
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .team-member-title-plus-description {
+        margin-right: 40px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+}
