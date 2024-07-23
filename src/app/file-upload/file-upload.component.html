@@ -1,0 +1,9 @@
+<div>
+  <input type="file" (change)="onFileSelected($event)">
+  <button (click)="onUpload()">Upload</button>
+</div>
+
+<div>
+  <input #fileId type="number" placeholder="Enter file ID">
+  <button (click)="onDownload(fileId.value)">Download</button>
+</div>

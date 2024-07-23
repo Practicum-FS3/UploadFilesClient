@@ -1,30 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MenuComponent } from './components/menu/menu.component';
-import { LoginComponent } from './components/login/login.component';
-import { HmosComponent } from './components/hmos/hmos.component';
-import { OurTeamComponent } from './components/our-team/our-team.component';
-import { PaymentOptionsComponent } from './components/payment-options/payment-options.component';
-import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    MenuComponent,
-    LoginComponent,
-    HmosComponent,
-    OurTeamComponent,
-    PaymentOptionsComponent,
-    RegistrationFormComponent
+    FileUploadComponent, 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
